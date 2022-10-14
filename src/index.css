@@ -1,13 +1,129 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
+    font-family: 'Khula', 'Oxygen', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+    padding: 3vw 8vw;
+    background-color: #e3fff4;
+}
+
+.navbar-upper-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.navbar-upper-div sup{
+    font-size: 12px;
+}
+
+.serch-bar{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.serch-bar input {
+    outline: none;
+    width: 82%;
+    padding: 6px;
+    border: 1px solid #cccccc;
+}
+
+.serch-bar button {
+    background-color: #26a47a;
+    width: 16%;
+    padding: 4px;
+    border: 1px solid #cccccc;
+    color: white;
+    font-size: 16px;
+    opacity: .6;
+}
+
+.serch-bar button:hover{
+    opacity: 1;
+}
+
+.app-icons{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-icon {
+    color: #26a47a;
+    font-size: 30px;
+}
+
+.navbar-lower-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-lower-div a, .navbar-upper-div a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+
+.slider{
+    width: 100%;
+    padding: 3vw 8vw;
+    position: relative;
+    
+}
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-icon-left, .slide-icon-right{
+    color: #26a47a;
+    font-size: 30px;
+    position: absolute;
+}
+
+.slide-icon-right{
+    right: 2vw;
+    top: 42%;
+}
+
+.slide-icon-left{
+    left: 2vw;
+    top: 42%;
+}
+
+.books{
+    padding: 0 8vw;
+    background-color: #e3fff4;
+}
+
+.filtered-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+}
+.one-item{
+    width: 24%;
+    margin-bottom: 1vw;
+    border: 1px solid #cccccc;
+    padding: 1vw;
+    background-color: white;
+}
+.one-item img{
+    width: 100%;
+    height: auto;
+}
+
+.select-filter{
+    margin: 20px 0;
+    width: 12%;
 }
